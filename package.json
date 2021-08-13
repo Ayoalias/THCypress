@@ -1,0 +1,22 @@
+{
+  "name": "THAutomation",
+  "version": "1.0.0",
+  "description": "WebUI Test Framework",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Tunji",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^7.6.0",
+    "cypress-cucumber-preprocessor": "^4.1.3",
+    "cypress-sql-server": "^1.0.0"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true
+  },
+  "dependencies": {
+    "mysql": "^2.18.1"
+  }
+}

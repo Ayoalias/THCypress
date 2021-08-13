@@ -1,0 +1,34 @@
+{
+    "testFiles": "**/*.{feature,features}",
+    "env": {
+        "url": "https://nl.tommy.com/",
+        "TAGS": "not @ignore"     
+        
+    },
+    "reporter": "mochawesome",
+    "reporterOptions": {
+        "reporterEnabled": "mochawesome",
+        "mochawesomeReporteOptions":{
+            "reporterDir": "cypress/reports/mocha",
+            "quite": true,
+            "overwrite": false,
+            "html": true,
+            "json": true,
+            "charts":true,
+            "timestamp":"mmddyyyy-HHMMss",
+            "video":false
+    }
+   
+    },
+    "defaultCommandTimeout": 10000,
+    "pageLoadTimeout": 60000,
+    "requestTimeout": 15000,
+    "responseTimeout": 15000,
+    "execTimeout": 60000,
+    "chromewebSecurity":false,
+    "viewportWidth": 1280,
+    "viewportHeight": 720
+      
+}
+
+
