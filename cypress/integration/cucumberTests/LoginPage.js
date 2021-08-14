@@ -6,9 +6,6 @@ class LoginPage {
         LoginTab(){
         return cy.get('[data-testid=register]').click()
         }
-        LoginEMailAddress(){
-        return cy.get('#signin-email').type('Tom.QOBSA6392@testmail.com')
-        }
         LoginPassword(){
         return cy.get('#signin-password').type('Lolly0821')
         }

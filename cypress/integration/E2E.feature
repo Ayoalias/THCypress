@@ -52,7 +52,7 @@ And User Completes the ENTER PASSWORD Field  With the Current Password
 And User Clicks SAVE Button
 Then My Account Page Displays New Email Address 
 
-Scenario: Validate “Your username and password do not match Try again Error Message is Displayed When Invalid Details is Used for Login
+Scenario: Validate Your username and password do not match Try again Error Message is Displayed When Invalid Details is Used for Login
 Given User Navigates to TH Landing Page
 And User Clicks Accept Terms Button
 And TommyHilfiger Logo is displayed
