@@ -13,7 +13,7 @@ function RandomNumber(int) {
   return text;
 }    
   
- const email = "Tom." + RandomName(5)+RandomNumber(4)+"@testmail.com"
+ const email1 = "Tom." + RandomName(5)+RandomNumber(4)+"@testmail.com"
 
 class ChangeEMailPage{
     
@@ -22,10 +22,10 @@ class ChangeEMailPage{
     }
     NewEMail(){
     cy.wait(5000)
-    return cy.get('.formField #email1').type(email)
+    return cy.get('.formField #email1').type(email1)
     }
     ConfirmNewEMail(){
-    return cy.get('#email1Confirm').type(email)
+    return cy.get('#email1Confirm').type(email1)
     }
     EnterPassword(){
     return cy.get('#logonPassword').type('Lolly0821')

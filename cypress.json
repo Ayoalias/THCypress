@@ -5,21 +5,22 @@
         "TAGS": "not @ignore"     
         
     },
-    "reporter": "mochawesome",
+    "reporter": "cypress-mochawesome-reporter",
     "reporterOptions": {
         "reporterEnabled": "mochawesome",
         "mochawesomeReporteOptions":{
             "reporterDir": "cypress/reports/mocha",
             "quite": true,
-            "overwrite": false,
+            "overwrite": true,
             "html": true,
             "json": true,
             "charts":true,
-            "timestamp":"mmddyyyy-HHMMss",
+            "timestamp":"mmddyyyy-HHMMss"
+        },
             "video":false
-    }
-   
     },
+   
+    
     "defaultCommandTimeout": 10000,
     "pageLoadTimeout": 60000,
     "requestTimeout": 15000,

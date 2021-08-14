@@ -32,5 +32,6 @@ module.exports = (on, config) => {
     queryDb: query => {
       return queryTestDb(query, config)
     },
-  })
+    })
+   // require('cypress-mochawesome-reporter/plugin')(on);
 }

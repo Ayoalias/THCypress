@@ -38,6 +38,9 @@ class RegistrationPage{
     AccountButton(){
     return cy.get('[data-testid=Button-primary-new] > :nth-child(2) > span').click()
     }
+    LoginEMailAddress(){
+    return cy.get('#signin-email').type(mail)
+    }
 }
        export default RegistrationPage
 

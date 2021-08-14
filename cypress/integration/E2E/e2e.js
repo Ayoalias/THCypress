@@ -18,7 +18,7 @@ const col = new CollectionPage();
 const upd = new UpdatePage();
 
 
-Given('I navigated to TH landing page', () => {
+Given('User Navigates to TH Landing Page', () => {
     cy.visit(Cypress.env('url'))   
 });
 And('User Clicks Accept Terms Button', () => {
@@ -54,8 +54,11 @@ And('User Clicks On CREATE AN ACCOUNT Button', () =>{
 Then('My Account Success Page is displayed', () =>{
     acc.AccountSucceessPageDisplayed()
 })
+// And('User Completes the Login E-Mail Field With a Valid E-Mail Address', () =>{
+//     log.LoginEMailAddress()
+// })
 And('User Completes the Login E-Mail Field With a Valid E-Mail Address', () =>{
-    log.LoginEMailAddress()
+    reg.LoginEMailAddress()
 })
 And('User Completes the Login Password Field  With a Valid Password', () =>{
     log.LoginPassword()
@@ -96,7 +99,7 @@ Then('Your password must be between 5 and 20 characters long Error Message is di
 Then('Your password must be between 5 and 20 characters long Error Message is displayed for Invalid Short Characters', () => {
     log.ErrorShortInvalidPasswordMessage()
 })
-Then('Then Fill in the field Error is displayed for No Password', () =>{
+Then('Fill in the field Error is displayed for No Password', () =>{
     log.NoPassword()
 })
 Then('Fill in the field Error is displayed for No EMail', () =>{
@@ -108,32 +111,32 @@ And('User Clicks HII Tab', () =>{
 And('User Selects My Details Tab', () =>{ 
     col.AccountDetails()
 })
-And('User Clicks Stop Button', () =>{
+And('User Clicks Newsletter Close Button ', () =>{
     upd.CloseButton()
 })
 Then('Update Your Details Page is Displayed', () =>{
-      upd.UpdatePageIsDisplayed()
+    upd.UpdatePageIsDisplayed()
 })
 And('User Clicks on TO UPDATE Button', () =>{
-     upd.ToUpdate()
+    upd.ToUpdate()
 })
 Then('CHANGE EMAIL ADDRESS Form is Displayed', () =>{
-      cha.ChangeEMailPageIsDisplayed()
+    cha.ChangeEMailPageIsDisplayed()
 })
 And('User Updates the NEW EMAIL ADDRESS Field With the New Email Address', () =>{
-      cha.NewEMail()
+    cha.NewEMail()
 })
 And('User Completes the CONFIRM NEW EMAIL ADDRESS Field With the New Email Address', () =>{
-      cha.ConfirmNewEMail()
+    cha.ConfirmNewEMail()
 })
 And('User Completes the ENTER PASSWORD Field  With the Current Password', () =>{
-      cha.EnterPassword()
+    cha.EnterPassword()
 })
 And('User Clicks SAVE Button', () =>{
-      cha.SaveButton()
+    cha.SaveButton()
 })
 Then('My Account Page Displays New Email Address', () =>{
-     upd.UpdatePageIsDisplayed()
+    upd.UpdatePageIsDisplayed()
 })
 
 
