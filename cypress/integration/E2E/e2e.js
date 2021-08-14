@@ -1,12 +1,13 @@
 import { Given , And , Then , When} from "cypress-cucumber-preprocessor/steps";
 
-import HomePage from "../POM/HomePage";
-import RegistrationPage from "../POM/RegistrationPage";
-import LoginPage from "../POM/LoginPage";
-import AccountPage from "../POM/AccountPage";
-import ChangeEMailPage from "../POM/ChangeEMailPage";
-import CollectionPage from "../POM/CollectionPage";
-import UpdatePage from "../POM/UpdatePage";
+import HomePage from "../cucumberTests/HomePage"
+import RegistrationPage from "../cucumberTests/RegistrationPage";
+import LoginPage from "../cucumberTests/LoginPage";
+import AccountPage from "../cucumberTests/AccountPage";
+import ChangeEMailPage from "../cucumberTests/ChangeEMailPage";
+import CollectionPage from "../cucumberTests/CollectionPage";
+import UpdatePage from "../cucumberTests/UpdatePage";
+
 
 const home = new HomePage();
 const reg = new RegistrationPage();
@@ -20,11 +21,9 @@ const upd = new UpdatePage();
 Given('I navigated to TH landing page', () => {
     cy.visit(Cypress.env('url'))   
 });
-
 And('User Clicks Accept Terms Button', () => {
     home.UserClicksAcceptTermsButton().click()
 });
-
 And('TommyHilfiger Logo is displayed', () => {
     home.TommyHilfigerLogoIsDisplayed()
 })
@@ -79,8 +78,11 @@ And('User Completes the EMail Field With an Incorrect EMail Address', () =>{
 And('User Completes the EMail Field With an InValid EMail Address', () =>{
     log.InvalidLoginEMailAddress()
 })
-And('User Completes the Password Field With an InValid Password', () =>{
+And('User Completes the Password Field With a Long InValid Password', () =>{
     log.InvalidLongLoginPassword()
+})
+And('User Completes the Password Field With a Short InValid Password', () =>{
+    log.InvalidShortLoginPassword()
 })
 Then('Your username and password do not match Try again Error is displayed', () => {
     log.ErrorLoginMessage()
@@ -88,26 +90,35 @@ Then('Your username and password do not match Try again Error is displayed', () 
 Then('Sorry this is not a valid email address Error is displayed', () => {
     log.ErrorEMailMessage()
 })
-Then('Your password must be between 5 and 20 characters long Error Messages', () => {
-     log.ErrorInvalidLoginMessage()
+Then('Your password must be between 5 and 20 characters long Error Message is displayed for Invalid Long Characters', () => {
+    log.ErrorLongInvalidPasswordMessage()
+})
+Then('Your password must be between 5 and 20 characters long Error Message is displayed for Invalid Short Characters', () => {
+    log.ErrorShortInvalidPasswordMessage()
+})
+Then('Then Fill in the field Error is displayed for No Password', () =>{
+    log.NoPassword()
+})
+Then('Fill in the field Error is displayed for No EMail', () =>{
+    log.NoEMail()
 })
 And('User Clicks HII Tab', () =>{
-     col.HIITab()
+    col.HIITab()
 })
 And('User Selects My Details Tab', () =>{ 
-      col.AccountDetails()
+    col.AccountDetails()
 })
-And('And User Clicks Stop Button', () =>{
+And('User Clicks Stop Button', () =>{
     upd.CloseButton()
 })
 Then('Update Your Details Page is Displayed', () =>{
       upd.UpdatePageIsDisplayed()
 })
-And('User Clicks on “TO UPDATE” Button', () =>{
+And('User Clicks on TO UPDATE Button', () =>{
      upd.ToUpdate()
 })
 Then('CHANGE EMAIL ADDRESS Form is Displayed', () =>{
-      cha.ChangeEMailPage()
+      cha.ChangeEMailPageIsDisplayed()
 })
 And('User Updates the NEW EMAIL ADDRESS Field With the New Email Address', () =>{
       cha.NewEMail()
