@@ -54,9 +54,6 @@ And('User Clicks On CREATE AN ACCOUNT Button', () =>{
 Then('My Account Success Page is displayed', () =>{
     acc.AccountSucceessPageDisplayed()
 })
-// And('User Completes the Login E-Mail Field With a Valid E-Mail Address', () =>{
-//     log.LoginEMailAddress()
-// })
 And('User Completes the Login E-Mail Field With a Valid E-Mail Address', () =>{
     reg.LoginEMailAddress()
 })
