@@ -52,7 +52,7 @@ And User Completes the ENTER PASSWORD Field  With the Current Password
 And User Clicks SAVE Button
 Then My Account Page Displays New Email Address 
 
-Scenario: Validate Your username and password do not match Try again Error Message is Displayed When Invalid Details is Used for Login
+Scenario: Validate "Your username and password do not match Try again" Error Message is Displayed When Invalid Details is Used for Login
 Given User Navigates to TH Landing Page
 And User Clicks Accept Terms Button
 And TommyHilfiger Logo is displayed
@@ -64,7 +64,7 @@ And User Selects Remember me Checkbox
 And User Clicks On TO REGISTER Button
 Then Your username and password do not match Try again Error is displayed
 
-Scenario: Validate Your username and password do not match Try again Error Message is Displayed When Invalid Details is Used for Login
+Scenario: Validate "Your username and password do not match Try again" Error Message is Displayed When Invalid Details is Used for Login
 Given User Navigates to TH Landing Page
 And User Clicks Accept Terms Button
 And TommyHilfiger Logo is displayed
@@ -76,7 +76,7 @@ And User Selects Remember me Checkbox
 And User Clicks On TO REGISTER Button
 Then Your username and password do not match Try again Error is displayed
 
-Scenario: Validate Sorry, this is not a valid email address Error Message  is Displayed When Invalid E-Mail Address is Used for Login
+Scenario: Validate "Sorry, this is not a valid email address" Error Message  is Displayed When Invalid E-Mail Address is Used for Login
 Given User Navigates to TH Landing Page
 And User Clicks Accept Terms Button
 And TommyHilfiger Logo is displayed
@@ -86,7 +86,7 @@ And User Completes the EMail Field With an InValid EMail Address
 And User Clicks On TO REGISTER Button
 Then Sorry this is not a valid email address Error is displayed
 
-Scenario: Validate Fill in the field Error Message is Displayed When No Password is Entered for Login
+Scenario: Validate "Fill in the field" Error Message is Displayed When No Password is Entered for Login
 Given User Navigates to TH Landing Page
 And User Clicks Accept Terms Button
 And TommyHilfiger Logo is displayed
@@ -96,7 +96,7 @@ And User Completes the Login E-Mail Field With a Valid E-Mail Address
 And User Clicks On TO REGISTER Button
 Then Fill in the field Error is displayed for No Password
 
-Scenario: Validate Fill in the field Error Message is Displayed When No EMail is Entered for Login
+Scenario: Validate "Fill in the field" Error Message is Displayed When No EMail is Entered for Login
 Given User Navigates to TH Landing Page
 And User Clicks Accept Terms Button
 And TommyHilfiger Logo is displayed
@@ -106,7 +106,7 @@ And User Clicks On TO REGISTER Button
 And User Completes the Login Password Field  With a Valid Password
 Then Fill in the field Error is displayed for No EMail
 
-Scenario: Validate Your password must be between 5 and 20 characters long Error Messages is Displayed When Invalid Short Xters Password Is Used 
+Scenario: Validate "Your password must be between 5 and 20 characters long" Error Messages is Displayed When Invalid Short Xters Password Is Used 
 Given User Navigates to TH Landing Page
 And User Clicks Accept Terms Button
 And TommyHilfiger Logo is displayed
@@ -118,7 +118,7 @@ And User Clicks On TO REGISTER Button
 Then Your password must be between 5 and 20 characters long Error Message is displayed for Invalid Short Characters
 
 #### Defect  >>>>> The Error Message being displayed by using long invalid xters as password is incorrect: ****Please Check
-Scenario: Validate Your password must be between 5 and 20 characters long Error Messages is Displayed When Invalid Long Xters Password Is Used
+Scenario: Validate "Your password must be between 5 and 20 characters long" Error Messages is Displayed When Invalid Long Xters Password Is Used
 Given User Navigates to TH Landing Page
 And User Clicks Accept Terms Button
 And TommyHilfiger Logo is displayed
