@@ -117,7 +117,7 @@ And User Completes the Password Field With a Short InValid Password
 And User Clicks On TO REGISTER Button
 Then Your password must be between 5 and 20 characters long Error Message is displayed for Invalid Short Characters
 
-### Defect  >>>>> The Error Message being displayed by using long invalid xters as password is incorrect: ****Please Check
+#### Defect  >>>>> The Error Message being displayed by using long invalid xters as password is incorrect: ****Please Check
 Scenario: Validate Your password must be between 5 and 20 characters long Error Messages is Displayed When Invalid Long Xters Password Is Used
 Given User Navigates to TH Landing Page
 And User Clicks Accept Terms Button

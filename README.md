@@ -5,7 +5,7 @@ This readme file explains instructions for running the cypress tests
 Precondition:
 
 Download Visual Studio Code as IDE
-Clone the project THCYPRESS from Git
+Clone the project THCYPRESS from Master Branch
 
 **A) Running Cypress Feature Tests Via Test Runner**
 
