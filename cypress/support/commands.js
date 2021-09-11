@@ -28,3 +28,7 @@ Cypress.Commands.add('forceVisit', url => {
         return win.open(url, '_self'); 
       });
 });
+
+Cypress.Commands.add("parseXlsx", (inputFile) => {
+   return cy.task('parseXlsx', {filePath: inputFile }); 
+    });
