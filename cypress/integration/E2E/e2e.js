@@ -1,12 +1,12 @@
 import { Given , And , Then , When} from "cypress-cucumber-preprocessor/steps";
 
-import HomePage from "../cucumberTests/HomePage"
-import RegistrationPage from "../cucumberTests/RegistrationPage";
-import LoginPage from "../cucumberTests/LoginPage";
-import AccountPage from "../cucumberTests/AccountPage";
-import ChangeEMailPage from "../cucumberTests/ChangeEMailPage";
-import CollectionPage from "../cucumberTests/CollectionPage";
-import UpdatePage from "../cucumberTests/UpdatePage";
+import HomePage from "../pageObjects/HomePage"
+import RegistrationPage from "../pageObjects/RegistrationPage";
+import LoginPage from "../pageObjects/LoginPage";
+import AccountPage from "../pageObjects/AccountPage";
+import ChangeEMailPage from "../pageObjects/ChangeEMailPage";
+import CollectionPage from "../pageObjects/CollectionPage";
+import UpdatePage from "../pageObjects/UpdatePage";
 
 
 const home = new HomePage();
